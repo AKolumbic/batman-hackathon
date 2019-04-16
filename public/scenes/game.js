@@ -176,7 +176,11 @@ class MainGameScene extends Scene {
       child.setBounceY(Phaser.Math.FloatBetween(0.2, 0.4));
     })
 
+<<<<<<< HEAD
     scoreText = this.add.text(16, 16, 'score: 0', { fontSize: '32px', fill: 'white' });
+=======
+    scoreText = this.add.text(16, 16, 'BATSCORE: 0', { fontSize: '32px', fill: 'white' });
+>>>>>>> 28299ee3acf3c83b7575aeaa78749c9eb38a26cc
     scoreText.setScrollFactor(0);
 
     //PHYSICS
@@ -252,7 +256,11 @@ function collectBats (player, batarang)
     batarang.disableBody(true, true);
 
     score += 10;
+<<<<<<< HEAD
     scoreText.setText('Score: ' + score);
+=======
+    scoreText.setText('BATSCORE: ' + score);
+>>>>>>> 28299ee3acf3c83b7575aeaa78749c9eb38a26cc
 }
 
 module.exports = MainGameScene;
